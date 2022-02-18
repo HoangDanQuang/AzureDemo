@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AzureDemo
 {
-    public partial class Form1 : Form
+    public partial class TranslateForm : Form
     {
-        public Form1()
+        public TranslateForm()
         {
             InitializeComponent();
         }
