@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizForm.Designer.cs">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizQuestionForm.Designer.cs">
+      <DependentUpon>QuizQuestionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SavedWordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     <Compile Include="SignInForm.Designer.cs">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuizForm.resx">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizQuestionForm.resx">
+      <DependentUpon>QuizQuestionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SavedWordForm.resx">
       <DependentUpon>SavedWordForm.cs</DependentUpon>
     </EmbeddedResource>
