@@ -16,5 +16,21 @@ namespace AzureDemo
         {
             InitializeComponent();
         }
+
+        private void translateNavBtn_Click(object sender, EventArgs e)
+        {
+            TranslateForm translateForm = new TranslateForm();
+            this.Hide();
+            translateForm.Closed += (s, args) => this.Close();
+            translateForm.Show();
+        }
+
+        private void savedWordNavBtn_Click(object sender, EventArgs e)
+        {
+            SavedWordForm savedWordForm = new SavedWordForm();
+            this.Hide();
+            savedWordForm.Closed += (s, args) => this.Close();
+            savedWordForm.Show();
+        }
     }
 }

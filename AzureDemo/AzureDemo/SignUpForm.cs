@@ -16,5 +16,21 @@ namespace AzureDemo
         {
             InitializeComponent();
         }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+            TranslateForm translateForm = new TranslateForm();
+            this.Hide();
+            translateForm.Closed += (s, args) => this.Close();
+            translateForm.Show();
+        }
+
+        private void signInBtn_Click(object sender, EventArgs e)
+        {
+            SignInForm signInForm = new SignInForm();
+            this.Hide();
+            signInForm.Closed += (s, args) => this.Close();
+            signInForm.Show();
+        }
     }
 }

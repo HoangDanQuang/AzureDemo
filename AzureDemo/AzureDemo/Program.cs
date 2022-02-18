@@ -16,7 +16,7 @@ namespace AzureDemo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuizQuestionForm());
+            Application.Run(new SignInForm());
         }
     }
 }

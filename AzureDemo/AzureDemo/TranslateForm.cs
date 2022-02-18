@@ -16,5 +16,21 @@ namespace AzureDemo
         {
             InitializeComponent();
         }
+
+        private void savedWordNavBtn_Click(object sender, EventArgs e)
+        {
+            SavedWordForm savedWordForm = new SavedWordForm();
+            this.Hide();
+            savedWordForm.Closed += (s, args) => this.Close();
+            savedWordForm.Show();
+        }
+
+        private void quizNavBtn_Click(object sender, EventArgs e)
+        {
+            QuizForm quizForm = new QuizForm();
+            this.Hide();
+            quizForm.Closed += (s, args) => this.Close();
+            quizForm.Show();
+        }
     }
 }

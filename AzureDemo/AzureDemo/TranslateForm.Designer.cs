@@ -37,10 +37,10 @@
             this.button6 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.savedWordNavBtn = new System.Windows.Forms.Button();
+            this.quizNavBtn = new System.Windows.Forms.Button();
+            this.newWordNavBtn = new System.Windows.Forms.Button();
+            this.translateNavBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -64,10 +64,10 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.splitContainer1.Panel1.Controls.Add(this.button5);
-            this.splitContainer1.Panel1.Controls.Add(this.button4);
-            this.splitContainer1.Panel1.Controls.Add(this.button3);
-            this.splitContainer1.Panel1.Controls.Add(this.button2);
+            this.splitContainer1.Panel1.Controls.Add(this.savedWordNavBtn);
+            this.splitContainer1.Panel1.Controls.Add(this.quizNavBtn);
+            this.splitContainer1.Panel1.Controls.Add(this.newWordNavBtn);
+            this.splitContainer1.Panel1.Controls.Add(this.translateNavBtn);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             // 
@@ -172,67 +172,69 @@
             this.textBox1.Size = new System.Drawing.Size(386, 208);
             this.textBox1.TabIndex = 0;
             // 
-            // button5
+            // savedWordNavBtn
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 376);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(364, 64);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "       Từ vựng của tôi";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
+            this.savedWordNavBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.savedWordNavBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savedWordNavBtn.Image = ((System.Drawing.Image)(resources.GetObject("savedWordNavBtn.Image")));
+            this.savedWordNavBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.savedWordNavBtn.Location = new System.Drawing.Point(0, 376);
+            this.savedWordNavBtn.Name = "savedWordNavBtn";
+            this.savedWordNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.savedWordNavBtn.Size = new System.Drawing.Size(364, 64);
+            this.savedWordNavBtn.TabIndex = 5;
+            this.savedWordNavBtn.Text = "       Từ vựng của tôi";
+            this.savedWordNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.savedWordNavBtn.UseVisualStyleBackColor = false;
+            this.savedWordNavBtn.Click += new System.EventHandler(this.savedWordNavBtn_Click);
             // 
-            // button4
+            // quizNavBtn
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 439);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(364, 64);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "       Câu hỏi ôn tập";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
+            this.quizNavBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.quizNavBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quizNavBtn.Image = ((System.Drawing.Image)(resources.GetObject("quizNavBtn.Image")));
+            this.quizNavBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quizNavBtn.Location = new System.Drawing.Point(0, 439);
+            this.quizNavBtn.Name = "quizNavBtn";
+            this.quizNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.quizNavBtn.Size = new System.Drawing.Size(364, 64);
+            this.quizNavBtn.TabIndex = 4;
+            this.quizNavBtn.Text = "       Câu hỏi ôn tập";
+            this.quizNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.quizNavBtn.UseVisualStyleBackColor = false;
+            this.quizNavBtn.Click += new System.EventHandler(this.quizNavBtn_Click);
             // 
-            // button3
+            // newWordNavBtn
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 313);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(364, 64);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "       Học từ mới";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.newWordNavBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.newWordNavBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newWordNavBtn.Image = ((System.Drawing.Image)(resources.GetObject("newWordNavBtn.Image")));
+            this.newWordNavBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.newWordNavBtn.Location = new System.Drawing.Point(0, 313);
+            this.newWordNavBtn.Name = "newWordNavBtn";
+            this.newWordNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.newWordNavBtn.Size = new System.Drawing.Size(364, 64);
+            this.newWordNavBtn.TabIndex = 3;
+            this.newWordNavBtn.Text = "       Học từ mới";
+            this.newWordNavBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.newWordNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.newWordNavBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // translateNavBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 251);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(364, 64);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "      Dịch tự động";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.translateNavBtn.BackColor = System.Drawing.Color.White;
+            this.translateNavBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.translateNavBtn.Image = ((System.Drawing.Image)(resources.GetObject("translateNavBtn.Image")));
+            this.translateNavBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.translateNavBtn.Location = new System.Drawing.Point(0, 251);
+            this.translateNavBtn.Name = "translateNavBtn";
+            this.translateNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.translateNavBtn.Size = new System.Drawing.Size(364, 64);
+            this.translateNavBtn.TabIndex = 2;
+            this.translateNavBtn.Text = "      Dịch tự động";
+            this.translateNavBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.translateNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.translateNavBtn.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -306,6 +308,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "TranslateForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dịch tự động";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -323,10 +326,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button translateNavBtn;
+        private System.Windows.Forms.Button savedWordNavBtn;
+        private System.Windows.Forms.Button quizNavBtn;
+        private System.Windows.Forms.Button newWordNavBtn;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
