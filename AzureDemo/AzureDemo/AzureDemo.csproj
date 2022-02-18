@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SavedWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavedWordForm.Designer.cs">
+      <DependentUpon>SavedWordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="SignInForm.Designer.cs">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SavedWordForm.resx">
+      <DependentUpon>SavedWordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\190308_games_grey_quiz_icon %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726066_image_plus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726066_image_plus_icon %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
