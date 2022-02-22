@@ -54,6 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Quiz.cs" />
+    <Compile Include="DTO\Vocabulary.cs" />
     <Compile Include="QuizForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,5 +190,6 @@
   <ItemGroup>
     <None Include="Resources\8726066_image_plus_icon %281%29.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
