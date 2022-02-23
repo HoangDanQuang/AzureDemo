@@ -35,10 +35,10 @@ namespace AzureDemo
             if (login(tBUsername.Text.ToString(), tbPassword.Text.ToString()))
             {
                 Account account = AccountDAO.Instance.getAccount(tBUsername.Text, tbPassword.Text);
+                TranslateForm translateForm = new TranslateForm(account.DisplayName, account.ID);
                 tbPassword.Clear();
                 tBUsername.Clear();
                 tBUsername.Focus();
-                TranslateForm translateForm = new TranslateForm();
                 this.Hide();
                 translateForm.Closed += (s, args) => this.Close();
                 translateForm.Show();

@@ -62,7 +62,7 @@ namespace AzureDemo.DAO
                     using (var cc = command.ExecuteReader()) {
                         while(cc.Read())
                         {
-                            id = cc.GetInt32(0)+1;
+                            id = cc.GetInt32(0);
                         }
                     }
                     connection.Close();
@@ -76,7 +76,7 @@ namespace AzureDemo.DAO
             byte[] temp = Encoding.ASCII.GetBytes(pass);
             byte[] hashData = md.ComputeHash(temp);
             string hashPass = "";
-            int id = getUserID();
+            int id = getUserID()+1;
             foreach (byte item in hashData)
             {
                 hashPass += item;

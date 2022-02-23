@@ -19,7 +19,7 @@ namespace AzureDemo
 
         private void translateNavBtn_Click(object sender, EventArgs e)
         {
-            TranslateForm translateForm = new TranslateForm();
+            TranslateForm translateForm = new TranslateForm("",1);
             this.Hide();
             translateForm.Closed += (s, args) => this.Close();
             translateForm.Show();

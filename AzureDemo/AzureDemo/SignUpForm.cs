@@ -29,7 +29,7 @@ namespace AzureDemo
             if (createAccount(tbUserName.Text.ToString(),tbDisplayName.Text.ToString(), tbPassword.Text.ToString()))
             {
                 Account account = AccountDAO.Instance.getAccount(tbUserName.Text, tbPassword.Text);
-                TranslateForm translateForm = new TranslateForm();
+                TranslateForm translateForm = new TranslateForm("",1);
                 this.Hide();
                 translateForm.Closed += (s, args) => this.Close();
                 translateForm.Show();

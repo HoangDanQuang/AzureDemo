@@ -8,6 +8,7 @@ namespace AzureDemo.DTO
 {
     class Vocabulary
     {
+        int id;
         string en;
         string vn;
         int userID;
@@ -22,9 +23,12 @@ namespace AzureDemo.DTO
             this.EN = data["en"].ToString();
             this.VN = data["vn"].ToString();
             this.UserID = (int)data["userId"];
+            this.ID = (int)data["id"];
         }
         public string EN { get => en; set => en = value; }
         public string VN { get => vn; set => vn = value; }
         public int UserID { get => userID; set => userID = value; }
+        public int ID { get => ID; set => ID = value; }
+
     }
 }

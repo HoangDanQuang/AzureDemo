@@ -12,7 +12,7 @@ namespace AzureDemo.DTO
         string userName;
         string displayName;
         string passWord;
-
+        int id;
         public Account(string user, string display, string pass)
         {
             this.UserName = user;
@@ -24,9 +24,11 @@ namespace AzureDemo.DTO
             this.UserName = data["userName"].ToString();
             this.DisplayName = data["displayName"].ToString();
             this.PassWord = data["password"].ToString();
+            this.ID = (int)data["id"];
         }
         public string UserName { get => userName; set => userName = value; }
         public string DisplayName { get => displayName; set => displayName = value; }
         public string PassWord { get => passWord; set => passWord = value; }
+        public int ID { get => id; set => id = value; }
     }
 }
