@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuizForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.startQuizBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.savedWordNavBtn = new System.Windows.Forms.Button();
             this.quizNavBtn = new System.Windows.Forms.Button();
             this.newWordNavBtn = new System.Windows.Forms.Button();
@@ -78,36 +78,6 @@
             this.splitContainer1.SplitterDistance = 367;
             this.splitContainer1.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(681, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 30);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Cyber Ninja";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 185);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(971, 53);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Câu hỏi trắc nghiệm ôn tập";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 255);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(971, 53);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "50 câu hỏi";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // startQuizBtn
             // 
             this.startQuizBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -119,6 +89,36 @@
             this.startQuizBtn.Text = "Bắt đầu";
             this.startQuizBtn.UseVisualStyleBackColor = false;
             this.startQuizBtn.Click += new System.EventHandler(this.startQuizBtn_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 255);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(971, 53);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "50 câu hỏi";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 185);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(971, 53);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Câu hỏi trắc nghiệm ôn tập";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(681, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 30);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Cyber Ninja";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // savedWordNavBtn
             // 
@@ -166,6 +166,7 @@
             this.newWordNavBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.newWordNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.newWordNavBtn.UseVisualStyleBackColor = false;
+            this.newWordNavBtn.Click += new System.EventHandler(this.newWordNavBtn_Click);
             // 
             // translateNavBtn
             // 

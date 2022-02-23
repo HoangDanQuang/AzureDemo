@@ -24,11 +24,11 @@ namespace AzureDemo.DTO
         }
         public Quiz(DataRow data)
         {
-            this.Ques = data["quiz"].ToString();
-            this.Option1 = data["option1"].ToString();
-            this.Option2 = data["option2"].ToString();
-            this.Option3 = data["option3"].ToString();
-            this.Option4 = data["option4"].ToString();
+            this.Ques = data["ques"].ToString();
+            this.Option1 = data["opt1"].ToString();
+            this.Option2 = data["opt2"].ToString();
+            this.Option3 = data["opt3"].ToString();
+            this.Option4 = data["opt4"].ToString();
             this.Ans = (int)data["ans"];
         }
         public string Ques { get => ques; set => ques = value; }
