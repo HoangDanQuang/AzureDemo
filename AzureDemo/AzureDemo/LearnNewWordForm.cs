@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace AzureDemo
 {
-    public partial class SavedWordForm : Form
+    public partial class LearnNewWordForm : Form
     {
-        public SavedWordForm()
+        public LearnNewWordForm()
         {
             InitializeComponent();
         }
 
-        private void translateNavBtn_Click(object sender, EventArgs e)
+        private void savedWordNavBtn_Click(object sender, EventArgs e)
         {
-            TranslateForm translateForm = new TranslateForm();
+            SavedWordForm savedWordForm = new SavedWordForm();
             this.Hide();
-            translateForm.Closed += (s, args) => this.Close();
-            translateForm.Show();
+            savedWordForm.Closed += (s, args) => this.Close();
+            savedWordForm.Show();
         }
 
         private void quizNavBtn_Click(object sender, EventArgs e)
@@ -41,12 +41,20 @@ namespace AzureDemo
             signInForm.Show();
         }
 
-        private void newWordNavBtn_Click(object sender, EventArgs e)
+        private void TranslateNavBtn_Click(object sender, EventArgs e)
         {
-            NewWordForm newWordForm = new NewWordForm();
+            TranslateForm translateForm = new TranslateForm();
             this.Hide();
-            newWordForm.FormClosed += (s, args) => this.Close();
-            newWordForm.Show();
+            translateForm.Closed += (s, args) => this.Close();
+            translateForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            NewWordForm learnForm = new NewWordForm();
+            this.Hide();
+            learnForm.Closed += (s, args) => this.Close();
+            learnForm.Show();
         }
     }
 }

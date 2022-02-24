@@ -30,21 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuizQuestionForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button2 = new System.Windows.Forms.Button();
             this.savedWordNavBtn = new System.Windows.Forms.Button();
             this.quizNavBtn = new System.Windows.Forms.Button();
             this.newWordNavBtn = new System.Windows.Forms.Button();
             this.translateNavBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,6 +64,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.savedWordNavBtn);
             this.splitContainer1.Panel1.Controls.Add(this.quizNavBtn);
             this.splitContainer1.Panel1.Controls.Add(this.newWordNavBtn);
@@ -85,6 +87,22 @@
             this.splitContainer1.Size = new System.Drawing.Size(1348, 721);
             this.splitContainer1.SplitterDistance = 367;
             this.splitContainer1.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::AzureDemo.Properties.Resources.fb_ic_arrow_back;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 502);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(364, 64);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "       Đăng xuất";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.logoutNavBtn_Click);
             // 
             // savedWordNavBtn
             // 
@@ -132,6 +150,7 @@
             this.newWordNavBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.newWordNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.newWordNavBtn.UseVisualStyleBackColor = false;
+            this.newWordNavBtn.Click += new System.EventHandler(this.newWordNavBtn_Click);
             // 
             // translateNavBtn
             // 
@@ -179,6 +198,67 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(735, 556);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(146, 44);
+            this.button11.TabIndex = 14;
+            this.button11.Text = "Kết thúc";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(523, 556);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(146, 44);
+            this.button10.TabIndex = 13;
+            this.button10.Text = "Tiếp theo";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(523, 414);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(358, 99);
+            this.button8.TabIndex = 12;
+            this.button8.Text = "D. Answer answer answer answer answer answer answer ";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(523, 253);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(358, 99);
+            this.button9.TabIndex = 11;
+            this.button9.Text = "B. Answer answer answer answer answer answer answer ";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(94, 414);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(358, 99);
+            this.button7.TabIndex = 10;
+            this.button7.Text = "C. Answer answer answer answer answer answer answer ";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(94, 253);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(358, 99);
+            this.button6.TabIndex = 9;
+            this.button6.Text = "A. Answer answer answer answer answer answer answer ";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,67 +289,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(94, 253);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(358, 99);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "A. Answer answer answer answer answer answer answer ";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(94, 414);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(358, 99);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "C. Answer answer answer answer answer answer answer ";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(523, 414);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(358, 99);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "D. Answer answer answer answer answer answer answer ";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(523, 253);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(358, 99);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "B. Answer answer answer answer answer answer answer ";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(523, 556);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(146, 44);
-            this.button10.TabIndex = 13;
-            this.button10.Text = "Tiếp theo";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(735, 556);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(146, 44);
-            this.button11.TabIndex = 14;
-            this.button11.Text = "Kết thúc";
-            this.button11.UseVisualStyleBackColor = true;
             // 
             // QuizQuestionForm
             // 
@@ -311,5 +330,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button2;
     }
 }

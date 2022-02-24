@@ -32,5 +32,21 @@ namespace AzureDemo
             savedWordForm.Closed += (s, args) => this.Close();
             savedWordForm.Show();
         }
+
+        private void logoutNavBtn_Click(object sender, EventArgs e)
+        {
+            SignInForm signInForm = new SignInForm();
+            this.Hide();
+            signInForm.Closed += (s, args) => this.Close();
+            signInForm.Show();
+        }
+
+        private void newWordNavBtn_Click(object sender, EventArgs e)
+        {
+            NewWordForm newWordForm = new NewWordForm();
+            this.Hide();
+            newWordForm.FormClosed += (s, args) => this.Close();
+            newWordForm.Show();
+        }
     }
 }

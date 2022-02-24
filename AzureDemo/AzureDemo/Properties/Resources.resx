@@ -118,29 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="8726066_image_plus_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8726066_image_plus_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="211859_mic_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\211859_mic_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="how-to-host-virtual-conference" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\how-to-host-virtual-conference.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marketing-1463213802" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marketing-1463213802.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8726066_image_plus_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8726066_image_plus_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6585294_abc_alphabet_language_programming_icon(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6585294_abc_alphabet_language_programming_icon(2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2849812_menu_multimedia_bars_media_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2849812_menu_multimedia_bars_media_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="190308_games_grey_quiz_icon (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\190308_games_grey_quiz_icon (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4041212_bussiness_communication_conversation_language_media_icon(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4041212_bussiness_communication_conversation_language_media_icon(3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toeic-1520743238_Business_planning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toeic-1520743238_Business_planning.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="479476_ninja_avatar_samurai_warrior_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\479476_ninja_avatar_samurai_warrior_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6585294_abc_alphabet_language_programming_icon(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6585294_abc_alphabet_language_programming_icon(2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="211859_mic_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\211859_mic_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8726066_image_plus_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8726066_image_plus_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3669408_volume_up_ic_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3669408_volume_up_ic_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="builder-warranties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\builder-warranties.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="176535_flurry_translate_google_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\176535_flurry_translate_google_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +154,22 @@
   <data name="6588526_abc_book_education_kids_icon(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6588526_abc_book_education_kids_icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8726066_image_plus_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8726066_image_plus_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4041212_bussiness_communication_conversation_language_media_icon(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4041212_bussiness_communication_conversation_language_media_icon(3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="479476_ninja_avatar_samurai_warrior_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\479476_ninja_avatar_samurai_warrior_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fb_ic_arrow_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fb_ic_arrow_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3669408_volume_up_ic_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3669408_volume_up_ic_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="word-image-346" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\word-image-346.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
