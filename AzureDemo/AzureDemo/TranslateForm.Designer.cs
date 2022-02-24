@@ -36,16 +36,14 @@
             this.translateNavBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.lbName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbBox = new System.Windows.Forms.ComboBox();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.tbVN = new System.Windows.Forms.TextBox();
+            this.tbEN = new System.Windows.Forms.TextBox();
+            this.bt1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -74,16 +72,14 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
-            this.splitContainer1.Panel2.Controls.Add(this.button10);
-            this.splitContainer1.Panel2.Controls.Add(this.button9);
+            this.splitContainer1.Panel2.Controls.Add(this.bt1);
             this.splitContainer1.Panel2.Controls.Add(this.lbName);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer1.Panel2.Controls.Add(this.button8);
-            this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
-            this.splitContainer1.Panel2.Controls.Add(this.button7);
-            this.splitContainer1.Panel2.Controls.Add(this.button6);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.cbBox);
+            this.splitContainer1.Panel2.Controls.Add(this.bt2);
+            this.splitContainer1.Panel2.Controls.Add(this.tbVN);
+            this.splitContainer1.Panel2.Controls.Add(this.tbEN);
             this.splitContainer1.Size = new System.Drawing.Size(1348, 721);
             this.splitContainer1.SplitterDistance = 367;
             this.splitContainer1.TabIndex = 1;
@@ -181,30 +177,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button10
-            // 
-            this.button10.BackgroundImage = global::AzureDemo.Properties.Resources._3669408_volume_up_ic_icon;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(539, 391);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(29, 31);
-            this.button10.TabIndex = 9;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.BackgroundImage = global::AzureDemo.Properties.Resources._211859_mic_icon;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(74, 391);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(29, 31);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // lbName
             // 
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -238,68 +210,68 @@
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // comboBox1
+            // cbBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Trung (Giản thể)",
-            "Nhật",
-            "Pháp",
-            "Đức",
-            "Hàn"});
-            this.comboBox1.Location = new System.Drawing.Point(739, 173);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 28);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Chọn ngôn ngữ";
+            this.cbBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBox.FormattingEnabled = true;
+            this.cbBox.Items.AddRange(new object[] {
+            "Tiếng anh sang tiếng việt",
+            "Tiếng việt sang tiếng anh"});
+            this.cbBox.Location = new System.Drawing.Point(630, 185);
+            this.cbBox.Name = "cbBox";
+            this.cbBox.Size = new System.Drawing.Size(279, 28);
+            this.cbBox.TabIndex = 4;
+            this.cbBox.Text = "Cách dịch";
+            this.cbBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button7
+            // bt2
             // 
-            this.button7.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(636, 173);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(97, 32);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "  Việt  ";
-            this.button7.UseVisualStyleBackColor = true;
+            this.bt2.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bt2.FlatAppearance.BorderSize = 0;
+            this.bt2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2.ForeColor = System.Drawing.Color.Black;
+            this.bt2.Location = new System.Drawing.Point(473, 185);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(172, 32);
+            this.bt2.TabIndex = 3;
+            this.bt2.Text = "  Tiếng Việt  ";
+            this.bt2.UseVisualStyleBackColor = true;
+            this.bt2.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button6
+            // tbVN
             // 
-            this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.button6.Location = new System.Drawing.Point(523, 173);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(97, 32);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "  Anh  ";
-            this.button6.UseVisualStyleBackColor = true;
+            this.tbVN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbVN.Location = new System.Drawing.Point(523, 223);
+            this.tbVN.Multiline = true;
+            this.tbVN.Name = "tbVN";
+            this.tbVN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbVN.Size = new System.Drawing.Size(386, 208);
+            this.tbVN.TabIndex = 1;
             // 
-            // textBox2
+            // tbEN
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(523, 223);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(386, 208);
-            this.textBox2.TabIndex = 1;
+            this.tbEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEN.Location = new System.Drawing.Point(64, 223);
+            this.tbEN.Multiline = true;
+            this.tbEN.Name = "tbEN";
+            this.tbEN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbEN.Size = new System.Drawing.Size(386, 208);
+            this.tbEN.TabIndex = 0;
             // 
-            // textBox1
+            // bt1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(64, 223);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(386, 208);
-            this.textBox1.TabIndex = 0;
+            this.bt1.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bt1.FlatAppearance.BorderSize = 0;
+            this.bt1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt1.ForeColor = System.Drawing.Color.Black;
+            this.bt1.Location = new System.Drawing.Point(13, 185);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(172, 32);
+            this.bt1.TabIndex = 8;
+            this.bt1.Text = "  Tiếng Anh";
+            this.bt1.UseVisualStyleBackColor = true;
             // 
             // TranslateForm
             // 
@@ -332,16 +304,14 @@
         private System.Windows.Forms.Button savedWordNavBtn;
         private System.Windows.Forms.Button quizNavBtn;
         private System.Windows.Forms.Button newWordNavBtn;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox tbVN;
+        private System.Windows.Forms.TextBox tbEN;
+        private System.Windows.Forms.Button bt2;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.ComboBox cbBox;
+        private System.Windows.Forms.Button bt1;
     }
 }
 

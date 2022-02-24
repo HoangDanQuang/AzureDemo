@@ -17,13 +17,16 @@ namespace AzureDemo
         List<Quiz> listQuiz = new List<Quiz>();
         int score = 0;
         int index;
-        public QuizQuestionForm()
+        string displayName;
+        public QuizQuestionForm(string displayname)
         {
             InitializeComponent();
             getListQuiz();
             index = 0;
+            displayName = displayname;
             showQuiz();
             button10.Hide();
+            lbDisplayname.Text = displayname.Trim();
             btOp1.BackColor = Color.White;
             btOp2.BackColor = Color.White;
             btOp3.BackColor = Color.White;
@@ -140,7 +143,7 @@ namespace AzureDemo
             {
                 score++;
             }
-            QuizResult savedWordForm = new QuizResult(score, listQuiz.Count);
+            QuizResult savedWordForm = new QuizResult(score, listQuiz.Count, displayName);
             this.Hide();
             savedWordForm.Closed += (s, args) => this.Close();
             savedWordForm.Show();

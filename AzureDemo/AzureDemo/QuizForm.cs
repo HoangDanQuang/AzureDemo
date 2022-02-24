@@ -12,9 +12,11 @@ namespace AzureDemo
 {
     public partial class QuizForm : Form
     {
-        public QuizForm()
+        string displayname;
+        public QuizForm(string name)
         {
             InitializeComponent();
+            displayname = name;
         }
 
         private void translateNavBtn_Click(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace AzureDemo
 
         private void startQuizBtn_Click(object sender, EventArgs e)
         {
-            QuizQuestionForm quizQuestionForm = new QuizQuestionForm();
+            QuizQuestionForm quizQuestionForm = new QuizQuestionForm(displayname);
             this.Hide();
             quizQuestionForm.Closed += (s, args) => this.Close();
             quizQuestionForm.Show();

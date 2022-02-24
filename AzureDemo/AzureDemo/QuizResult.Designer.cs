@@ -40,7 +40,7 @@ namespace AzureDemo
             this.label2 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.lbQues = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbDisplayName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -73,7 +73,7 @@ namespace AzureDemo
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.button11);
             this.splitContainer1.Panel2.Controls.Add(this.lbQues);
-            this.splitContainer1.Panel2.Controls.Add(this.label1);
+            this.splitContainer1.Panel2.Controls.Add(this.lbDisplayName);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer1.Size = new System.Drawing.Size(1348, 721);
             this.splitContainer1.SplitterDistance = 367;
@@ -206,15 +206,15 @@ namespace AzureDemo
             this.lbQues.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbQues.Click += new System.EventHandler(this.lbQues_Click);
             // 
-            // label1
+            // lbDisplayName
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(681, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 30);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Cyber Ninja";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDisplayName.Location = new System.Drawing.Point(681, 18);
+            this.lbDisplayName.Name = "lbDisplayName";
+            this.lbDisplayName.Size = new System.Drawing.Size(207, 30);
+            this.lbDisplayName.TabIndex = 7;
+            this.lbDisplayName.Text = "Cyber Ninja";
+            this.lbDisplayName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox2
             // 
@@ -255,7 +255,7 @@ namespace AzureDemo
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label lbQues;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbDisplayName;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
     }

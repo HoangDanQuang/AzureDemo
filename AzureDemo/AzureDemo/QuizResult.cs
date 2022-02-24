@@ -12,9 +12,12 @@ namespace AzureDemo
 {
     public partial class QuizResult : Form
     {
-        public QuizResult(int numofRight, int numOfTotal)
+        string displayName;
+        public QuizResult(int numofRight, int numOfTotal, string name)
         {
             InitializeComponent();
+            displayName = name;
+            lbDisplayName.Text = name.Trim();
             label2.Text = "Số câu đúng:   " + numofRight + "/" + numOfTotal;
         }
 
@@ -51,7 +54,7 @@ namespace AzureDemo
 
         private void button11_Click(object sender, EventArgs e)
         {
-            QuizQuestionForm quizQuestionForm = new QuizQuestionForm();
+            QuizQuestionForm quizQuestionForm = new QuizQuestionForm(displayName);
             this.Hide();
             quizQuestionForm.Closed += (s, args) => this.Close();
             quizQuestionForm.Show();

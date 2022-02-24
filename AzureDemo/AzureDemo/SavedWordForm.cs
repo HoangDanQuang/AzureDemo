@@ -27,7 +27,7 @@ namespace AzureDemo
 
         private void quizNavBtn_Click(object sender, EventArgs e)
         {
-            QuizForm quizForm = new QuizForm();
+            QuizForm quizForm = new QuizForm("");
             this.Hide();
             quizForm.Closed += (s, args) => this.Close();
             quizForm.Show();
