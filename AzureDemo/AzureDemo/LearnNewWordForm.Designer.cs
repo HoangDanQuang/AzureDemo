@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LearnNewWordForm));
-            System.Windows.Forms.ListViewItem listViewItem201 = new System.Windows.Forms.ListViewItem("item 1");
-            System.Windows.Forms.ListViewItem listViewItem202 = new System.Windows.Forms.ListViewItem("item 2");
-            System.Windows.Forms.ListViewItem listViewItem203 = new System.Windows.Forms.ListViewItem("item 3");
-            System.Windows.Forms.ListViewItem listViewItem204 = new System.Windows.Forms.ListViewItem("item 4");
-            System.Windows.Forms.ListViewItem listViewItem205 = new System.Windows.Forms.ListViewItem("item 5");
-            System.Windows.Forms.ListViewItem listViewItem206 = new System.Windows.Forms.ListViewItem("item 6");
-            System.Windows.Forms.ListViewItem listViewItem207 = new System.Windows.Forms.ListViewItem("item 7");
-            System.Windows.Forms.ListViewItem listViewItem208 = new System.Windows.Forms.ListViewItem("Item 8");
-            System.Windows.Forms.ListViewItem listViewItem209 = new System.Windows.Forms.ListViewItem("Item 9");
-            System.Windows.Forms.ListViewItem listViewItem210 = new System.Windows.Forms.ListViewItem("Item 10");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("item 1");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("item 2");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("item 3");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("item 4");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("item 5");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("item 6");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("item 7");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Item 8");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Item 9");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("Item 10");
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.button2 = new System.Windows.Forms.Button();
             this.savedWordNavBtn = new System.Windows.Forms.Button();
@@ -47,23 +47,23 @@
             this.translateNavBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -139,7 +139,7 @@
             this.quizNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.quizNavBtn.Size = new System.Drawing.Size(364, 64);
             this.quizNavBtn.TabIndex = 4;
-            this.quizNavBtn.Text = "       Câu hỏi ôn tập";
+            this.quizNavBtn.Text = "       Trắc nhiệm vui";
             this.quizNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.quizNavBtn.UseVisualStyleBackColor = false;
             this.quizNavBtn.Click += new System.EventHandler(this.quizNavBtn_Click);
@@ -206,25 +206,20 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // button3
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(681, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 30);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Cyber Ninja";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::AzureDemo.Properties.Resources._479476_ninja_avatar_samurai_warrior_icon;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(911, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImage = global::AzureDemo.Properties.Resources.fb_ic_arrow_back;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(9, 8);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(60, 50);
+            this.button3.TabIndex = 7;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel1
             // 
@@ -237,6 +232,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(314, 385);
             this.panel1.TabIndex = 11;
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(78, 332);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(154, 41);
+            this.button8.TabIndex = 14;
+            this.button8.Text = "Thêm";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label3
             // 
@@ -276,16 +282,16 @@
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem201,
-            listViewItem202,
-            listViewItem203,
-            listViewItem204,
-            listViewItem205,
-            listViewItem206,
-            listViewItem207,
-            listViewItem208,
-            listViewItem209,
-            listViewItem210});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
+            listViewItem6,
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10});
             this.listView1.Location = new System.Drawing.Point(115, 168);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
@@ -295,30 +301,26 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Tile;
             // 
-            // button8
+            // label1
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(78, 332);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(154, 41);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Thêm";
-            this.button8.UseVisualStyleBackColor = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(681, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 30);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Cyber Ninja";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button3
+            // pictureBox2
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImage = global::AzureDemo.Properties.Resources.fb_ic_arrow_back;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(9, 8);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(60, 50);
-            this.button3.TabIndex = 7;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.pictureBox2.BackgroundImage = global::AzureDemo.Properties.Resources._479476_ninja_avatar_samurai_warrior_icon;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(911, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // LearnNewWordForm
             // 
@@ -336,9 +338,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

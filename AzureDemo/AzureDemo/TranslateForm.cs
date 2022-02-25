@@ -26,11 +26,12 @@ namespace AzureDemo
             UserId = userID;
             InitializeComponent();
             lbName.Text = dislayname.Trim();
+            
         }
 
         private void savedWordNavBtn_Click(object sender, EventArgs e)
         {
-            SavedWordForm savedWordForm = new SavedWordForm();
+            SavedWordForm savedWordForm = new SavedWordForm(UserId, DisplayName);
             this.Hide();
             savedWordForm.Closed += (s, args) => this.Close();
             savedWordForm.Show();
@@ -38,7 +39,7 @@ namespace AzureDemo
 
         private void quizNavBtn_Click(object sender, EventArgs e)
         {
-            QuizForm quizForm = new QuizForm(DisplayName);
+            QuizForm quizForm = new QuizForm(UserId,DisplayName);
             this.Hide();
             quizForm.Closed += (s, args) => this.Close();
             quizForm.Show();
@@ -113,7 +114,7 @@ namespace AzureDemo
 
         private void newWordNavBtn_Click(object sender, EventArgs e)
         {
-            NewWordForm newWordForm = new NewWordForm();
+            NewWordForm newWordForm = new NewWordForm(UserId, DisplayName);
             this.Hide();
             newWordForm.FormClosed += (s, args) => this.Close();
             newWordForm.Show();

@@ -28,7 +28,7 @@ namespace AzureDemo.DTO
         public string EN { get => en; set => en = value; }
         public string VN { get => vn; set => vn = value; }
         public int UserID { get => userID; set => userID = value; }
-        public int ID { get => ID; set => ID = value; }
+        public int ID { get => id; set => id = value; }
 
     }
 }

@@ -37,6 +37,7 @@
             this.translateNavBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.bt1 = new System.Windows.Forms.Button();
             this.lbName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.bt2 = new System.Windows.Forms.Button();
             this.tbVN = new System.Windows.Forms.TextBox();
             this.tbEN = new System.Windows.Forms.TextBox();
-            this.bt1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -129,7 +129,7 @@
             this.quizNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.quizNavBtn.Size = new System.Drawing.Size(364, 64);
             this.quizNavBtn.TabIndex = 4;
-            this.quizNavBtn.Text = "       Câu hỏi ôn tập";
+            this.quizNavBtn.Text = "       Trắc nghiệm vui";
             this.quizNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.quizNavBtn.UseVisualStyleBackColor = false;
             this.quizNavBtn.Click += new System.EventHandler(this.quizNavBtn_Click);
@@ -196,6 +196,20 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // bt1
+            // 
+            this.bt1.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bt1.FlatAppearance.BorderSize = 0;
+            this.bt1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt1.ForeColor = System.Drawing.Color.Black;
+            this.bt1.Location = new System.Drawing.Point(13, 185);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(172, 32);
+            this.bt1.TabIndex = 8;
+            this.bt1.Text = "  Tiếng Anh";
+            this.bt1.UseVisualStyleBackColor = true;
+            // 
             // lbName
             // 
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,9 +220,6 @@
             this.lbName.Text = "Cyber Ninja";
             this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbName.Click += new System.EventHandler(this.lbName_Click);
-            // 
-            // label1
-            //            
             // 
             // pictureBox2
             // 
@@ -280,20 +291,6 @@
             this.tbEN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbEN.Size = new System.Drawing.Size(386, 208);
             this.tbEN.TabIndex = 0;
-            // 
-            // bt1
-            // 
-            this.bt1.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bt1.FlatAppearance.BorderSize = 0;
-            this.bt1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt1.ForeColor = System.Drawing.Color.Black;
-            this.bt1.Location = new System.Drawing.Point(13, 185);
-            this.bt1.Name = "bt1";
-            this.bt1.Size = new System.Drawing.Size(172, 32);
-            this.bt1.TabIndex = 8;
-            this.bt1.Text = "  Tiếng Anh";
-            this.bt1.UseVisualStyleBackColor = true;
             // 
             // TranslateForm
             // 

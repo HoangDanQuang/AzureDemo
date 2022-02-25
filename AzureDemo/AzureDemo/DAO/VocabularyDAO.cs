@@ -64,5 +64,11 @@ namespace AzureDemo.DAO
             int data = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { id});
             return data > 0;
         }
+        public bool setVocabulary(string vn, string en, int id)
+        {
+            string query = "EXEC dbo.USP_SetVocabulary @id , @en , @vn ";
+            int data = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { id, en, vn });
+            return data > 0;
+        }
     }
 }

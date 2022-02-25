@@ -12,11 +12,14 @@ namespace AzureDemo
 {
     public partial class QuizForm : Form
     {
-        string displayname;
-        public QuizForm(string name)
+        int id;
+        string displayName;
+        public QuizForm(int uid, string name)
         {
             InitializeComponent();
-            displayname = name;
+            displayName = name;
+            this.id = uid;
+            label1.Text = displayName.Trim();
         }
 
         private void translateNavBtn_Click(object sender, EventArgs e)
@@ -29,7 +32,7 @@ namespace AzureDemo
 
         private void savedWordNavBtn_Click(object sender, EventArgs e)
         {
-            SavedWordForm savedWordForm = new SavedWordForm();
+            SavedWordForm savedWordForm = new SavedWordForm(id, displayName);
             this.Hide();
             savedWordForm.Closed += (s, args) => this.Close();
             savedWordForm.Show();
@@ -37,7 +40,7 @@ namespace AzureDemo
 
         private void startQuizBtn_Click(object sender, EventArgs e)
         {
-            QuizQuestionForm quizQuestionForm = new QuizQuestionForm(displayname);
+            QuizQuestionForm quizQuestionForm = new QuizQuestionForm(id,displayName);
             this.Hide();
             quizQuestionForm.Closed += (s, args) => this.Close();
             quizQuestionForm.Show();
@@ -54,7 +57,7 @@ namespace AzureDemo
 
         private void newWordNavBtn_Click(object sender, EventArgs e)
         {
-            NewWordForm newWordForm = new NewWordForm();
+            NewWordForm newWordForm = new NewWordForm(id, displayName);
             this.Hide();
             newWordForm.FormClosed += (s, args) => this.Close();
             newWordForm.Show();

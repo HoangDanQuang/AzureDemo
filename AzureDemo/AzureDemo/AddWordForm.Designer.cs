@@ -29,25 +29,17 @@ namespace AzureDemo
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tbEN = new System.Windows.Forms.TextBox();
+            this.tbVN = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(54, 22);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(273, 307);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
             // 
             // button6
             // 
@@ -58,6 +50,7 @@ namespace AzureDemo
             this.button6.TabIndex = 15;
             this.button6.Text = "Thêm";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -73,7 +66,7 @@ namespace AzureDemo
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.richTextBox2);
+            this.panel1.Controls.Add(this.tbVN);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -102,14 +95,6 @@ namespace AzureDemo
             this.label2.Text = "Item 1";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(21, 281);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(273, 59);
-            this.richTextBox2.TabIndex = 3;
-            this.richTextBox2.Text = "Custom mean";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::AzureDemo.Properties.Resources._8726066_image_plus_icon__1_;
@@ -121,32 +106,53 @@ namespace AzureDemo
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
+            // tbEN
+            // 
+            this.tbEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEN.Location = new System.Drawing.Point(21, 22);
+            this.tbEN.Multiline = true;
+            this.tbEN.Name = "tbEN";
+            this.tbEN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbEN.Size = new System.Drawing.Size(306, 338);
+            this.tbEN.TabIndex = 16;
+            // 
+            // tbVN
+            // 
+            this.tbVN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbVN.Location = new System.Drawing.Point(8, 285);
+            this.tbVN.Multiline = true;
+            this.tbVN.Name = "tbVN";
+            this.tbVN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbVN.Size = new System.Drawing.Size(287, 95);
+            this.tbVN.TabIndex = 17;
+            // 
             // AddWordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 441);
+            this.Controls.Add(this.tbEN);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.richTextBox1);
             this.Name = "AddWordForm";
             this.Text = "AddWordForm";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.TextBox tbEN;
+        private System.Windows.Forms.TextBox tbVN;
     }
 }

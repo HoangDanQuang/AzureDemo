@@ -17,13 +17,15 @@ namespace AzureDemo
         List<Quiz> listQuiz = new List<Quiz>();
         int score = 0;
         int index;
+        int id;
         string displayName;
-        public QuizQuestionForm(string displayname)
+        public QuizQuestionForm(int id,string displayname)
         {
             InitializeComponent();
             getListQuiz();
             index = 0;
             displayName = displayname;
+            this.id = id;
             showQuiz();
             button10.Hide();
             lbDisplayname.Text = displayname.Trim();
@@ -58,7 +60,7 @@ namespace AzureDemo
 
         private void savedWordNavBtn_Click(object sender, EventArgs e)
         {
-            SavedWordForm savedWordForm = new SavedWordForm();
+            SavedWordForm savedWordForm = new SavedWordForm(id, displayName);
             this.Hide();
             savedWordForm.Closed += (s, args) => this.Close();
             savedWordForm.Show();
@@ -143,7 +145,7 @@ namespace AzureDemo
             {
                 score++;
             }
-            QuizResult quizResult = new QuizResult(score, listQuiz.Count, displayName);
+            QuizResult quizResult = new QuizResult(score, listQuiz.Count, displayName, id);
             quizResult.Closed += (s, args) => this.Close();
             this.Hide();
             quizResult.Show();
@@ -230,7 +232,7 @@ namespace AzureDemo
 
         private void newWordNavBtn_Click(object sender, EventArgs e)
         {
-            NewWordForm newWordForm = new NewWordForm();
+            NewWordForm newWordForm = new NewWordForm(id, displayName);
             this.Hide();
             newWordForm.FormClosed += (s, args) => this.Close();
             newWordForm.Show();

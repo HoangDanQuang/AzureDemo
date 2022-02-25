@@ -131,7 +131,7 @@
             this.quizNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.quizNavBtn.Size = new System.Drawing.Size(364, 64);
             this.quizNavBtn.TabIndex = 4;
-            this.quizNavBtn.Text = "       Câu hỏi ôn tập";
+            this.quizNavBtn.Text = "       Trắc nghiệm vui";
             this.quizNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.quizNavBtn.UseVisualStyleBackColor = false;
             // 

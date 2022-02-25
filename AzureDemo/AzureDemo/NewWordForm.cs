@@ -12,14 +12,18 @@ namespace AzureDemo
 {
     public partial class NewWordForm : Form
     {
-        public NewWordForm()
+        int id;
+        string displayName;
+        public NewWordForm(int uId, string name)
         {
             InitializeComponent();
+            this.id = uId;
+            this.displayName = name;
         }
 
         private void savedWordNavBtn_Click(object sender, EventArgs e)
         {
-            SavedWordForm savedWordForm = new SavedWordForm();
+            SavedWordForm savedWordForm = new SavedWordForm(id,displayName);
             this.Hide();
             savedWordForm.Closed += (s, args) => this.Close();
             savedWordForm.Show();
@@ -27,7 +31,7 @@ namespace AzureDemo
 
         private void quizNavBtn_Click(object sender, EventArgs e)
         {
-            QuizForm quizForm = new QuizForm("");
+            QuizForm quizForm = new QuizForm(id,displayName);
             this.Hide();
             quizForm.Closed += (s, args) => this.Close();
             quizForm.Show();
@@ -43,7 +47,7 @@ namespace AzureDemo
 
         private void TranslateNavBtn_Click(object sender, EventArgs e)
         {
-            TranslateForm translateForm = new TranslateForm("", 1);
+            TranslateForm translateForm = new TranslateForm(displayName, id);
             this.Hide();
             translateForm.Closed += (s, args) => this.Close();
             translateForm.Show();
@@ -51,7 +55,7 @@ namespace AzureDemo
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            LearnNewWordForm learnForm = new LearnNewWordForm();
+            LearnNewWordForm learnForm = new LearnNewWordForm(id, displayName);
             this.Hide();
             learnForm.Closed += (s, args) => this.Close();
             learnForm.Show();
@@ -59,7 +63,7 @@ namespace AzureDemo
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            LearnNewWordForm learnForm = new LearnNewWordForm();
+            LearnNewWordForm learnForm = new LearnNewWordForm(id, displayName);
             this.Hide();
             learnForm.Closed += (s, args) => this.Close();
             learnForm.Show();
@@ -67,7 +71,7 @@ namespace AzureDemo
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            LearnNewWordForm learnForm = new LearnNewWordForm();
+            LearnNewWordForm learnForm = new LearnNewWordForm(id, displayName);
             this.Hide();
             learnForm.Closed += (s, args) => this.Close();
             learnForm.Show();
@@ -75,7 +79,7 @@ namespace AzureDemo
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            LearnNewWordForm learnForm = new LearnNewWordForm();
+            LearnNewWordForm learnForm = new LearnNewWordForm(id, displayName);
             this.Hide();
             learnForm.Closed += (s, args) => this.Close();
             learnForm.Show();
@@ -83,7 +87,7 @@ namespace AzureDemo
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            LearnNewWordForm learnForm = new LearnNewWordForm();
+            LearnNewWordForm learnForm = new LearnNewWordForm(id, displayName);
             this.Hide();
             learnForm.Closed += (s, args) => this.Close();
             learnForm.Show();
@@ -91,7 +95,7 @@ namespace AzureDemo
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            LearnNewWordForm learnForm = new LearnNewWordForm();
+            LearnNewWordForm learnForm = new LearnNewWordForm(id, displayName);
             this.Hide();
             learnForm.Closed += (s, args) => this.Close();
             learnForm.Show();

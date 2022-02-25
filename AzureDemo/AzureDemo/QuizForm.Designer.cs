@@ -38,7 +38,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btMenu = new System.Windows.Forms.Button();
             this.startQuizBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -72,7 +71,6 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.startQuizBtn);
-            this.splitContainer1.Panel2.Controls.Add(this.label3);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
@@ -123,7 +121,7 @@
             this.quizNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.quizNavBtn.Size = new System.Drawing.Size(364, 64);
             this.quizNavBtn.TabIndex = 4;
-            this.quizNavBtn.Text = "       Câu hỏi ôn tập";
+            this.quizNavBtn.Text = "       Trắc nghiệm vui";
             this.quizNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.quizNavBtn.UseVisualStyleBackColor = false;
             // 
@@ -202,16 +200,6 @@
             this.startQuizBtn.UseVisualStyleBackColor = false;
             this.startQuizBtn.Click += new System.EventHandler(this.startQuizBtn_Click);
             // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 255);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(971, 53);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "50 câu hỏi";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,7 +207,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(971, 53);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Câu hỏi trắc nghiệm ôn tập";
+            this.label2.Text = "Câu hỏi trắc nghiệm vui";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -274,7 +262,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btMenu;
         private System.Windows.Forms.Button startQuizBtn;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
