@@ -48,5 +48,19 @@ namespace AzureDemo
             newWordForm.FormClosed += (s, args) => this.Close();
             newWordForm.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AddWordForm addWordForm = new AddWordForm();
+            this.FormClosed += (s, args) => addWordForm.Close();
+            addWordForm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SetWordForm setWordForm = new SetWordForm();
+            this.FormClosed += (s, args) => setWordForm.Close();
+            setWordForm.Show();
+        }
     }
 }

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SetWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetWordForm.Designer.cs">
+      <DependentUpon>SetWordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWordForm.Designer.cs">
+      <DependentUpon>AddWordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LearnNewWordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
     <Compile Include="SignInForm.Designer.cs">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SetWordForm.resx">
+      <DependentUpon>SetWordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWordForm.resx">
+      <DependentUpon>AddWordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LearnNewWordForm.resx">
       <DependentUpon>LearnNewWordForm.cs</DependentUpon>
     </EmbeddedResource>
