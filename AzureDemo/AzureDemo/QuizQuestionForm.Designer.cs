@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuizQuestionForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button2 = new System.Windows.Forms.Button();
             this.savedWordNavBtn = new System.Windows.Forms.Button();
             this.quizNavBtn = new System.Windows.Forms.Button();
             this.newWordNavBtn = new System.Windows.Forms.Button();
@@ -63,6 +64,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.savedWordNavBtn);
             this.splitContainer1.Panel1.Controls.Add(this.quizNavBtn);
             this.splitContainer1.Panel1.Controls.Add(this.newWordNavBtn);
@@ -85,6 +87,22 @@
             this.splitContainer1.Size = new System.Drawing.Size(1348, 721);
             this.splitContainer1.SplitterDistance = 367;
             this.splitContainer1.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::AzureDemo.Properties.Resources.fb_ic_arrow_back;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 502);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(364, 64);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "       Đăng xuất";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.logoutNavBtn_Click);
             // 
             // savedWordNavBtn
             // 
@@ -132,6 +150,7 @@
             this.newWordNavBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.newWordNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.newWordNavBtn.UseVisualStyleBackColor = false;
+            this.newWordNavBtn.Click += new System.EventHandler(this.newWordNavBtn_Click);
             // 
             // translateNavBtn
             // 
@@ -319,5 +338,6 @@
         private System.Windows.Forms.Button btOp2;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button2;
     }
 }
