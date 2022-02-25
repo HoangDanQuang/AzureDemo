@@ -43,9 +43,7 @@ namespace AzureDemo
             quizQuestionForm.Show();
         }
 
-        private void newWordNavBtn_Click(object sender, EventArgs e)
-        {
-        }
+      
         private void logoutNavBtn_Click(object sender, EventArgs e)
         {
             SignInForm signInForm = new SignInForm();

@@ -143,10 +143,10 @@ namespace AzureDemo
             {
                 score++;
             }
-            QuizResult savedWordForm = new QuizResult(score, listQuiz.Count, displayName);
+            QuizResult quizResult = new QuizResult(score, listQuiz.Count, displayName);
+            quizResult.Closed += (s, args) => this.Close();
             this.Hide();
-            savedWordForm.Closed += (s, args) => this.Close();
-            savedWordForm.Show();
+            quizResult.Show();
         }
 
         private void btOp2_Click(object sender, EventArgs e)
