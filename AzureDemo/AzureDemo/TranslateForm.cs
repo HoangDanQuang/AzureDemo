@@ -14,10 +14,10 @@ namespace AzureDemo
 {
     public partial class TranslateForm : Form
     {
-        private static readonly string subscriptionKey = "9f23c91f740e4fd68231d35c330347ff";
+        private static readonly string subscriptionKey = "527414e5c1704c67b9371dda768a1b7b";
         private static readonly string endpoint = "https://api.cognitive.microsofttranslator.com/";
         private static readonly string location = "southeastasia";
-        string route = "/translate?api-version=3.0&from=en&to=vi";
+        string route = "/translate?api-version=3.0&from=enp&to=vi";
         string DisplayName;
         int UserId;
         public TranslateForm(string dislayname, int userID)

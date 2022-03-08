@@ -11,7 +11,7 @@ namespace AzureDemo.DAO
     public class DataProvider
     {
         private static DataProvider instance;
-        private string connectStr = @"Server=tcp:envoca.database.windows.net,1433;Initial Catalog=DP900;Persist Security Info=False;User ID=huynhtrongphuc;Password=Trongphuc123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private string connectStr = @"Server=tcp:engsup.database.windows.net,1433;Initial Catalog=envoca;Persist Security Info=False;User ID=huynhtrongphuc;Password=Trongphuc123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public static DataProvider Instance
         {
             get { if (instance == null) instance = new DataProvider(); return instance; }

@@ -31,7 +31,7 @@ namespace AzureDemo.DAO
         public int getVocabularyID() {
             int id = 0;
             string query = "EXEC dbo.USP_GetVocabularyId";
-            string connectStr = @"Server=tcp:envoca.database.windows.net,1433;Initial Catalog=DP900;Persist Security Info=False;User ID=huynhtrongphuc;Password=Trongphuc123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string connectStr = @"Server=tcp:engsup.database.windows.net,1433;Initial Catalog=envoca;Persist Security Info=False;User ID=huynhtrongphuc;Password=Trongphuc123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             using (SqlConnection connection = new SqlConnection(connectStr))
             {
                 using (var command = connection.CreateCommand())
@@ -42,6 +42,7 @@ namespace AzureDemo.DAO
                     {
                         while (cc.Read())
                         {
+                            if(!cc.IsDBNull(0))
                             id = cc.GetInt32(0);
                         }
                     }
@@ -50,7 +51,7 @@ namespace AzureDemo.DAO
             }
             return id;
         }
-        public bool addVocabulary(string vn, string en, int userId)
+        public bool addVocabulary(string en, string vn, int userId)
         {
             int id = getVocabularyID() + 1;
             string query = "EXEC dbo.USP_AddVocabulary @id , @en , @vn , @userId";

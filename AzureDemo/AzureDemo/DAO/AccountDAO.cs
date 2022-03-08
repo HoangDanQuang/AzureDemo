@@ -53,7 +53,7 @@ namespace AzureDemo.DAO
         public int getUserID() {
             int id=0;
             string query = "EXEC dbo.USP_GetUserId";
-            string connectStr = @"Server=tcp:envoca.database.windows.net,1433;Initial Catalog=DP900;Persist Security Info=False;User ID=huynhtrongphuc;Password=Trongphuc123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string connectStr = @"Server=tcp:engsup.database.windows.net,1433;Initial Catalog=envoca;Persist Security Info=False;User ID=huynhtrongphuc;Password=Trongphuc123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             using (SqlConnection connection = new SqlConnection(connectStr))
             {
                 using (var command = connection.CreateCommand()) {
@@ -62,7 +62,8 @@ namespace AzureDemo.DAO
                     using (var cc = command.ExecuteReader()) {
                         while(cc.Read())
                         {
-                            id = cc.GetInt32(0);
+                            if(!cc.IsDBNull(0))
+                                id = cc.GetInt32(0);
                         }
                     }
                     connection.Close();
