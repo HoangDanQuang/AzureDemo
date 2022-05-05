@@ -1,6 +1,7 @@
-﻿namespace AzureDemo
+﻿
+namespace AzureDemo
 {
-    partial class TranslateForm
+    partial class QuizResult
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +29,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TranslateForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuizResult));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button2 = new System.Windows.Forms.Button();
             this.savedWordNavBtn = new System.Windows.Forms.Button();
             this.quizNavBtn = new System.Windows.Forms.Button();
             this.newWordNavBtn = new System.Windows.Forms.Button();
             this.translateNavBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.bt1 = new System.Windows.Forms.Button();
-            this.lbName = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.lbQues = new System.Windows.Forms.Label();
+            this.lbDisplayName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.cbBox = new System.Windows.Forms.ComboBox();
-            this.bt2 = new System.Windows.Forms.Button();
-            this.tbVN = new System.Windows.Forms.TextBox();
-            this.tbEN = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -74,33 +72,15 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
-            this.splitContainer1.Panel2.Controls.Add(this.bt1);
-            this.splitContainer1.Panel2.Controls.Add(this.lbName);
+            this.splitContainer1.Panel2.Controls.Add(this.label2);
+            this.splitContainer1.Panel2.Controls.Add(this.button11);
+            this.splitContainer1.Panel2.Controls.Add(this.lbQues);
+            this.splitContainer1.Panel2.Controls.Add(this.lbDisplayName);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.button8);
-            this.splitContainer1.Panel2.Controls.Add(this.cbBox);
-            this.splitContainer1.Panel2.Controls.Add(this.bt2);
-            this.splitContainer1.Panel2.Controls.Add(this.tbVN);
-            this.splitContainer1.Panel2.Controls.Add(this.tbEN);
             this.splitContainer1.Size = new System.Drawing.Size(1348, 721);
             this.splitContainer1.SplitterDistance = 367;
-            this.splitContainer1.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::AzureDemo.Properties.Resources.fb_ic_arrow_back;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 502);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(364, 64);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "       Đăng xuất";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.logoutNavBtn_Click);
+            this.splitContainer1.TabIndex = 4;
+            this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
             // savedWordNavBtn
             // 
@@ -120,7 +100,7 @@
             // 
             // quizNavBtn
             // 
-            this.quizNavBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.quizNavBtn.BackColor = System.Drawing.Color.White;
             this.quizNavBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quizNavBtn.Image = ((System.Drawing.Image)(resources.GetObject("quizNavBtn.Image")));
             this.quizNavBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,7 +112,6 @@
             this.quizNavBtn.Text = "       Trắc nghiệm vui";
             this.quizNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.quizNavBtn.UseVisualStyleBackColor = false;
-            this.quizNavBtn.Click += new System.EventHandler(this.quizNavBtn_Click);
             // 
             // newWordNavBtn
             // 
@@ -153,7 +132,7 @@
             // 
             // translateNavBtn
             // 
-            this.translateNavBtn.BackColor = System.Drawing.Color.White;
+            this.translateNavBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.translateNavBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.translateNavBtn.Image = ((System.Drawing.Image)(resources.GetObject("translateNavBtn.Image")));
             this.translateNavBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,6 +145,7 @@
             this.translateNavBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.translateNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.translateNavBtn.UseVisualStyleBackColor = false;
+            this.translateNavBtn.Click += new System.EventHandler(this.translateNavBtn_Click);
             // 
             // pictureBox1
             // 
@@ -196,30 +176,48 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // bt1
+            // label2
             // 
-            this.bt1.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bt1.FlatAppearance.BorderSize = 0;
-            this.bt1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt1.ForeColor = System.Drawing.Color.Black;
-            this.bt1.Location = new System.Drawing.Point(13, 185);
-            this.bt1.Name = "bt1";
-            this.bt1.Size = new System.Drawing.Size(172, 32);
-            this.bt1.TabIndex = 8;
-            this.bt1.Text = "  Tiếng Anh";
-            this.bt1.UseVisualStyleBackColor = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(96, 313);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(792, 64);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Số câu đúng:  0/0";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // lbName
+            // button11
             // 
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(681, 18);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(207, 30);
-            this.lbName.TabIndex = 7;
-            this.lbName.Text = "Cyber Ninja";
-            this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lbName.Click += new System.EventHandler(this.lbName_Click);
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(735, 556);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(146, 44);
+            this.button11.TabIndex = 14;
+            this.button11.Text = "Làm lại";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // lbQues
+            // 
+            this.lbQues.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQues.Location = new System.Drawing.Point(96, 203);
+            this.lbQues.Name = "lbQues";
+            this.lbQues.Size = new System.Drawing.Size(792, 89);
+            this.lbQues.TabIndex = 8;
+            this.lbQues.Text = "KẾT QUẢ";
+            this.lbQues.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbQues.Click += new System.EventHandler(this.lbQues_Click);
+            // 
+            // lbDisplayName
+            // 
+            this.lbDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDisplayName.Location = new System.Drawing.Point(681, 18);
+            this.lbDisplayName.Name = "lbDisplayName";
+            this.lbDisplayName.Size = new System.Drawing.Size(207, 30);
+            this.lbDisplayName.TabIndex = 7;
+            this.lbDisplayName.Text = "Cyber Ninja";
+            this.lbDisplayName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox2
             // 
@@ -231,81 +229,33 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // button8
+            // button2
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(681, 472);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(183, 51);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Dịch";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::AzureDemo.Properties.Resources.fb_ic_arrow_back;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 500);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(364, 64);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "       Đăng xuất";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // cbBox
-            // 
-            this.cbBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBox.FormattingEnabled = true;
-            this.cbBox.Items.AddRange(new object[] {
-            "Tiếng anh sang tiếng việt",
-            "Tiếng việt sang tiếng anh"});
-            this.cbBox.Location = new System.Drawing.Point(630, 185);
-            this.cbBox.Name = "cbBox";
-            this.cbBox.Size = new System.Drawing.Size(279, 28);
-            this.cbBox.TabIndex = 4;
-            this.cbBox.Text = "Cách dịch";
-            this.cbBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // bt2
-            // 
-            this.bt2.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bt2.FlatAppearance.BorderSize = 0;
-            this.bt2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2.ForeColor = System.Drawing.Color.Black;
-            this.bt2.Location = new System.Drawing.Point(473, 185);
-            this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(172, 32);
-            this.bt2.TabIndex = 3;
-            this.bt2.Text = "  Tiếng Việt  ";
-            this.bt2.UseVisualStyleBackColor = true;
-            this.bt2.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // tbVN
-            // 
-            this.tbVN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVN.Location = new System.Drawing.Point(523, 223);
-            this.tbVN.Multiline = true;
-            this.tbVN.Name = "tbVN";
-            this.tbVN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbVN.Size = new System.Drawing.Size(386, 208);
-            this.tbVN.TabIndex = 1;
-            // 
-            // tbEN
-            // 
-            this.tbEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEN.Location = new System.Drawing.Point(64, 223);
-            this.tbEN.Multiline = true;
-            this.tbEN.Name = "tbEN";
-            this.tbEN.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbEN.Size = new System.Drawing.Size(386, 208);
-            this.tbEN.TabIndex = 0;
-            // 
-            // TranslateForm
+            // QuizResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.splitContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "TranslateForm";
+            this.Name = "QuizResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dịch tự động";
+            this.Text = "QuizResult";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -316,22 +266,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button translateNavBtn;
         private System.Windows.Forms.Button savedWordNavBtn;
         private System.Windows.Forms.Button quizNavBtn;
         private System.Windows.Forms.Button newWordNavBtn;
-        private System.Windows.Forms.TextBox tbVN;
-        private System.Windows.Forms.TextBox tbEN;
-        private System.Windows.Forms.Button bt2;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button translateNavBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label lbQues;
+        private System.Windows.Forms.Label lbDisplayName;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.ComboBox cbBox;
-        private System.Windows.Forms.Button bt1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
     }
 }
-

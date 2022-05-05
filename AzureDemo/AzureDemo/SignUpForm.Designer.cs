@@ -30,17 +30,17 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbDisplayName = new System.Windows.Forms.TextBox();
             this.signInBtn = new System.Windows.Forms.Button();
             this.signUpBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -65,13 +65,13 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.label6);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox3);
+            this.splitContainer1.Panel2.Controls.Add(this.tbDisplayName);
             this.splitContainer1.Panel2.Controls.Add(this.signInBtn);
             this.splitContainer1.Panel2.Controls.Add(this.signUpBtn);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox2);
+            this.splitContainer1.Panel2.Controls.Add(this.tbPassword);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.tbUserName);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Size = new System.Drawing.Size(1348, 721);
             this.splitContainer1.SplitterDistance = 367;
@@ -86,6 +86,44 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "WordUp";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::AzureDemo.Properties.Resources._176535_flurry_translate_google_icon__1_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(61, 98);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(230, 230);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(357, 591);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 20);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Đã có tài khoản?";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(132, 240);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(149, 25);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Tên người dùng";
+            // 
+            // tbDisplayName
+            // 
+            this.tbDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDisplayName.Location = new System.Drawing.Point(383, 240);
+            this.tbDisplayName.Name = "tbDisplayName";
+            this.tbDisplayName.Size = new System.Drawing.Size(458, 30);
+            this.tbDisplayName.TabIndex = 1;
             // 
             // signInBtn
             // 
@@ -123,14 +161,14 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Mật khẩu";
             // 
-            // textBox2
+            // tbPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(383, 419);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(458, 30);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.tbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Location = new System.Drawing.Point(383, 419);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(458, 30);
+            this.tbPassword.TabIndex = 3;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -142,13 +180,13 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Tên đăng nhập";
             // 
-            // textBox1
+            // tbUserName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(383, 328);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(458, 30);
-            this.textBox1.TabIndex = 2;
+            this.tbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUserName.Location = new System.Drawing.Point(383, 328);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Size = new System.Drawing.Size(458, 30);
+            this.tbUserName.TabIndex = 2;
             // 
             // label2
             // 
@@ -160,44 +198,6 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Learn with passion to live with purpose";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(132, 240);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 25);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Tên người dùng";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(383, 240);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(458, 30);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(357, 591);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Đã có tài khoản?";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::AzureDemo.Properties.Resources._176535_flurry_translate_google_icon__1_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(61, 98);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 230);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // SignUpForm
             // 
@@ -228,13 +228,13 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbDisplayName;
         private System.Windows.Forms.Button signInBtn;
         private System.Windows.Forms.Button signUpBtn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbUserName;
         private System.Windows.Forms.Label label2;
     }
 }

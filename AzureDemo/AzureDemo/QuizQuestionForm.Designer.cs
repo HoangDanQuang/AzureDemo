@@ -30,21 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuizQuestionForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button2 = new System.Windows.Forms.Button();
             this.savedWordNavBtn = new System.Windows.Forms.Button();
             this.quizNavBtn = new System.Windows.Forms.Button();
             this.newWordNavBtn = new System.Windows.Forms.Button();
             this.translateNavBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.btOp4 = new System.Windows.Forms.Button();
+            this.btOp2 = new System.Windows.Forms.Button();
+            this.btOp3 = new System.Windows.Forms.Button();
+            this.btOp1 = new System.Windows.Forms.Button();
+            this.lbQues = new System.Windows.Forms.Label();
+            this.lbDisplayname = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,6 +64,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.savedWordNavBtn);
             this.splitContainer1.Panel1.Controls.Add(this.quizNavBtn);
             this.splitContainer1.Panel1.Controls.Add(this.newWordNavBtn);
@@ -75,16 +77,32 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.button11);
             this.splitContainer1.Panel2.Controls.Add(this.button10);
-            this.splitContainer1.Panel2.Controls.Add(this.button8);
-            this.splitContainer1.Panel2.Controls.Add(this.button9);
-            this.splitContainer1.Panel2.Controls.Add(this.button7);
-            this.splitContainer1.Panel2.Controls.Add(this.button6);
-            this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Controls.Add(this.label1);
+            this.splitContainer1.Panel2.Controls.Add(this.btOp4);
+            this.splitContainer1.Panel2.Controls.Add(this.btOp2);
+            this.splitContainer1.Panel2.Controls.Add(this.btOp3);
+            this.splitContainer1.Panel2.Controls.Add(this.btOp1);
+            this.splitContainer1.Panel2.Controls.Add(this.lbQues);
+            this.splitContainer1.Panel2.Controls.Add(this.lbDisplayname);
             this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer1.Size = new System.Drawing.Size(1348, 721);
             this.splitContainer1.SplitterDistance = 367;
             this.splitContainer1.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::AzureDemo.Properties.Resources.fb_ic_arrow_back;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 502);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(364, 64);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "       Đăng xuất";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.logoutNavBtn_Click);
             // 
             // savedWordNavBtn
             // 
@@ -113,7 +131,7 @@
             this.quizNavBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.quizNavBtn.Size = new System.Drawing.Size(364, 64);
             this.quizNavBtn.TabIndex = 4;
-            this.quizNavBtn.Text = "       Câu hỏi ôn tập";
+            this.quizNavBtn.Text = "       Trắc nghiệm vui";
             this.quizNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.quizNavBtn.UseVisualStyleBackColor = false;
             // 
@@ -132,6 +150,7 @@
             this.newWordNavBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.newWordNavBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.newWordNavBtn.UseVisualStyleBackColor = false;
+            this.newWordNavBtn.Click += new System.EventHandler(this.newWordNavBtn_Click);
             // 
             // translateNavBtn
             // 
@@ -179,77 +198,16 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // button11
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(89, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(792, 89);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "1. Question question question question question question question question questi" +
-    "on question question question?";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(681, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 30);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Cyber Ninja";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::AzureDemo.Properties.Resources._479476_ninja_avatar_samurai_warrior_icon;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(911, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(94, 253);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(358, 99);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "A. Answer answer answer answer answer answer answer ";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(94, 414);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(358, 99);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "C. Answer answer answer answer answer answer answer ";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(523, 414);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(358, 99);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "D. Answer answer answer answer answer answer answer ";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(523, 253);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(358, 99);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "B. Answer answer answer answer answer answer answer ";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(735, 556);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(146, 44);
+            this.button11.TabIndex = 14;
+            this.button11.Text = "Kết thúc";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
             // button10
             // 
@@ -260,16 +218,85 @@
             this.button10.TabIndex = 13;
             this.button10.Text = "Tiếp theo";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button11
+            // btOp4
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(735, 556);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(146, 44);
-            this.button11.TabIndex = 14;
-            this.button11.Text = "Kết thúc";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btOp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOp4.Location = new System.Drawing.Point(523, 414);
+            this.btOp4.Name = "btOp4";
+            this.btOp4.Size = new System.Drawing.Size(358, 99);
+            this.btOp4.TabIndex = 12;
+            this.btOp4.Text = "D. Answer answer answer answer answer answer answer ";
+            this.btOp4.UseVisualStyleBackColor = true;
+            this.btOp4.Click += new System.EventHandler(this.btOp4_Click);
+            // 
+            // btOp2
+            // 
+            this.btOp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOp2.Location = new System.Drawing.Point(523, 253);
+            this.btOp2.Name = "btOp2";
+            this.btOp2.Size = new System.Drawing.Size(358, 99);
+            this.btOp2.TabIndex = 11;
+            this.btOp2.Text = "B. Answer answer answer answer answer answer answer ";
+            this.btOp2.UseVisualStyleBackColor = true;
+            this.btOp2.Click += new System.EventHandler(this.btOp2_Click);
+            // 
+            // btOp3
+            // 
+            this.btOp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOp3.ForeColor = System.Drawing.Color.Black;
+            this.btOp3.Location = new System.Drawing.Point(94, 414);
+            this.btOp3.Name = "btOp3";
+            this.btOp3.Size = new System.Drawing.Size(358, 99);
+            this.btOp3.TabIndex = 10;
+            this.btOp3.Text = "C. Answer answer answer answer answer answer answer ";
+            this.btOp3.UseVisualStyleBackColor = true;
+            this.btOp3.Click += new System.EventHandler(this.btOp3_Click);
+            // 
+            // btOp1
+            // 
+            this.btOp1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btOp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOp1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btOp1.Location = new System.Drawing.Point(94, 253);
+            this.btOp1.Name = "btOp1";
+            this.btOp1.Size = new System.Drawing.Size(358, 99);
+            this.btOp1.TabIndex = 9;
+            this.btOp1.Text = "A. Answer answer answer answer answer answer answer ";
+            this.btOp1.UseVisualStyleBackColor = false;
+            this.btOp1.Click += new System.EventHandler(this.btOp1_Click);
+            // 
+            // lbQues
+            // 
+            this.lbQues.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQues.Location = new System.Drawing.Point(89, 128);
+            this.lbQues.Name = "lbQues";
+            this.lbQues.Size = new System.Drawing.Size(792, 89);
+            this.lbQues.TabIndex = 8;
+            this.lbQues.Text = "1. Question question question question question question question question questi" +
+    "on question question question?";
+            this.lbQues.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lbDisplayname
+            // 
+            this.lbDisplayname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDisplayname.Location = new System.Drawing.Point(681, 18);
+            this.lbDisplayname.Name = "lbDisplayname";
+            this.lbDisplayname.Size = new System.Drawing.Size(207, 30);
+            this.lbDisplayname.TabIndex = 7;
+            this.lbDisplayname.Text = "Cyber Ninja";
+            this.lbDisplayname.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::AzureDemo.Properties.Resources._479476_ninja_avatar_samurai_warrior_icon;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(911, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // QuizQuestionForm
             // 
@@ -302,14 +329,15 @@
         private System.Windows.Forms.Button translateNavBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btOp3;
+        private System.Windows.Forms.Button btOp1;
+        private System.Windows.Forms.Label lbQues;
+        private System.Windows.Forms.Label lbDisplayname;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btOp4;
+        private System.Windows.Forms.Button btOp2;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button2;
     }
 }
